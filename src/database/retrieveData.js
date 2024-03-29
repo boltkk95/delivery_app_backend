@@ -1,4 +1,4 @@
-const { query } = require('./db');
+const { query } = require('../db');
 
 async function retrieveData(tableName) {
   try {

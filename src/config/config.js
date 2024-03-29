@@ -12,6 +12,9 @@ const config = {
   app: {
     port: process.env.PORT || 3000,
   },
+  connectionString: process.env.DB_CONNECTION_STRING,
 };
+if (!config.connectionString)
+  config.connectionString = `postgresql://${config.db.user}:${config.db.password}@${config.db.host}:${config.db.port}/${config.db.name}`;
 
 module.exports = config;
