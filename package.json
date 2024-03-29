@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node --version",
+    "start": "node src/server.js",
     "test": "jest"
   },
   "jest": {
